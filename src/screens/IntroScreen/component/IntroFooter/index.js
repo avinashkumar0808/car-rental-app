@@ -21,11 +21,11 @@ function IntroFooterFun({
           style={activeIndexTab === 2 ? style.activeTab : style.circle}></View>
       </View>
       <View style={style.buttonContainer}>
-        {activeIndexTab !== introData.length - 1 ? (
-          <TouchableOpacity onPress={() => handleSkip()}>
-            <Text>Skip</Text>
+        
+          <TouchableOpacity  disabled={activeIndexTab===introData.length-1} onPress={() => handleSkip()}>
+            <Text style={activeIndexTab<introData.length-1?style.visibleSkip:style.skip}>Skip</Text>
           </TouchableOpacity>
-        ) : null}
+        
         
           <TouchableOpacity onPress={() => handleNext()}>
             <Text style={style.nextButton}>Next</Text>

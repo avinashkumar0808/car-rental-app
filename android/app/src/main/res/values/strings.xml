@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">carRental</string>
+    <string name="facebook_app_id">1135054544158539</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+     <string name="facebook_client_token">c53d392292b78041028381d516dd23ce</string>
+
 </resources>

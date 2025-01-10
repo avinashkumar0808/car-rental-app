@@ -13,7 +13,7 @@ export default function IntroScreen({navigation}) {
 
   function handleSkip() {
     navigation.navigate('Login');
-  }
+  } 
   function handleNext() {
  if(activeIndexTab=== introData.length-1){
   navigation.navigate('Login');

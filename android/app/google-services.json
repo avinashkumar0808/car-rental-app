@@ -1,0 +1,100 @@
+{
+  "project_info": {
+    "project_number": "95899567945",
+    "project_id": "recipeeapp-trainingproject",
+    "storage_bucket": "recipeeapp-trainingproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95899567945:android:d4a89a25ad939a01fc7c98",
+        "android_client_info": {
+          "package_name": "com.carrental"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95899567945-8akknls0hrerqgekl3dl21f7t2h5qd32.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.carrental",
+            "certificate_hash": "d5eb1c9f11e2ea7764dadef1422d60b551c14ef0"
+          }
+        },
+        {
+          "client_id": "95899567945-8hn11oreh94vbola5kv4ksd4lkm1sv5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyixMFnLW9dR4AE7RH9llLjBSgPj8mf_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95899567945-8hn11oreh94vbola5kv4ksd4lkm1sv5i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "95899567945-mh5lcec8qmmf2e6jvjtladu9covfn9tj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.RecipeeAppProject",
+                "app_store_id": "123456789"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95899567945:android:9f20c65e35706225fc7c98",
+        "android_client_info": {
+          "package_name": "com.recipeeappproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95899567945-20nmghjn4li5vttalpp6mpjtqmed1jd7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.recipeeappproject",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "95899567945-8hn11oreh94vbola5kv4ksd4lkm1sv5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyixMFnLW9dR4AE7RH9llLjBSgPj8mf_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95899567945-8hn11oreh94vbola5kv4ksd4lkm1sv5i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "95899567945-mh5lcec8qmmf2e6jvjtladu9covfn9tj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.RecipeeAppProject",
+                "app_store_id": "123456789"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

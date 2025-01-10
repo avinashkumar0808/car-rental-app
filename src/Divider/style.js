@@ -7,6 +7,7 @@ export const style = StyleSheet.create({
     alignItems:'center',
     justifyContent:'space-between',
     padding:10,
+    paddingVertical:20,
    
   },
   line:{
@@ -16,6 +17,8 @@ export const style = StyleSheet.create({
     marginLeft:5,
     marginRight:5,
     flexShrink:1.2,
+    opacity:0.4,
+    
   },
   text:{
     marginLeft:5,

@@ -10,7 +10,7 @@ export const style = StyleSheet.create({
     padding: 25,
   },
    iconContainer: {
-      marginTop: 30,
+    
       alignItems: 'center',
       justifyContent: 'center',
       gap: 8,
@@ -31,9 +31,11 @@ export const style = StyleSheet.create({
     footerPressableButtonText:{
       color:colors.darkBlue,
       fontWeight:'600',
+      paddingVertical:10,
+      paddingRight:15,
     },
     loginFooter:{
-      marginTop:20,
+      marginTop:10,
       flexDirection:'row',
       alignItems:'center',
       justifyContent:'center',

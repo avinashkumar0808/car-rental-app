@@ -8,7 +8,7 @@ import {useEffect} from 'react';
 export default function Intro({image, heading, textContent}) {
   const navigation = useNavigation();
 
-  return (
+  return ( 
     <View style={style.container}>
       <View style={style.imageContainer}>
         <Image

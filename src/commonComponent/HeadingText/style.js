@@ -10,6 +10,14 @@ export const style = StyleSheet.create({
   },
   simpleText: {
     fontSize: 15,
-    opacity: 0.6,
+    color:colors.lightGray
   },
+  simpleTextContainer:{
+    alignItems:'center',
+    flexDirection:'row',
+    
+  },
+  email:{
+color:colors.darkBlue
+  }
 });

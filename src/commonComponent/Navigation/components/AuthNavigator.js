@@ -6,6 +6,7 @@ import Login from '../../../screens/Login';
 import Header from '../../Header';
 import Register from '../../../screens/Register';
 import OTPVerify from '../../../screens/OTPVerify';
+import ForgetPassword from '../../../screens/ForgetPassword';
 
 const AuthStack = createStackNavigator();
 
@@ -40,6 +41,10 @@ export default function AuthNavigator() {
           headerShown: true,
         }}
         />
+        <AuthStack.Screen component={ForgetPassword} name='ForgetPassword'  options={{
+          header: ()=><Header />,
+          headerShown: true,
+        }}/>
     </AuthStack.Navigator>
   );
 }

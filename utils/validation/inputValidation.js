@@ -1,3 +1,3 @@
 export function isValidEmail(email){
-return true;
+return email.includes('@');
 }

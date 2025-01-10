@@ -16,14 +16,14 @@ export const style = StyleSheet.create({
   },
   image: {
     height: 350,
-    width: 330,
+    width: 360,
     objectFit: 'cover',
   },
   textContainer: {
     width: '100%',
   },
   headingText: {
-    paddingLeft: 38,
+    paddingHorizontal: 15,
     marginTop: 70,
     fontSize: 25,
     fontWeight: '500',
@@ -31,9 +31,8 @@ export const style = StyleSheet.create({
   },
   textParagraph: {
     marginTop: 25,
-    paddingLeft: 35,
+    paddingHorizontal:15,
     lineHeight: 25,
-    paddingRight: 15,
     fontSize: 15,
     opacity: 0.6,
   },

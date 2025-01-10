@@ -1,21 +1,22 @@
 import {StyleSheet} from 'react-native';
+import { colors } from '../../../../../utils/constants/colors';
 
 export const style = StyleSheet.create({
   buttonMainContainer: {
     height: 100,
-    marginLeft: 40,
-    marginRight: 40,
+    paddingHorizontal:15,
     backgroundColor: '#fff',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 100,
+    gap:120
+    
   },
   buttonContainer: {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',
-    gap: 10,
+    gap: 35,
   },
   nextButton: {
     padding: 16,
@@ -43,4 +44,10 @@ export const style = StyleSheet.create({
     backgroundColor: '#192252',
     borderRadius: 50,
   },
+  skip:{
+    color:'#fff'
+  },
+  visibleSkip:{
+    color:colors.lightGray
+  }
 });
