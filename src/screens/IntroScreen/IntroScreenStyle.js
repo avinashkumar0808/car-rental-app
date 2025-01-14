@@ -7,7 +7,8 @@ backgroundColor:'#fff',
 flex:1,
 flexDirection:'column',
 alignItems:'center',
-justifyContent:'center'
+justifyContent:'center',
+
 
   },
  

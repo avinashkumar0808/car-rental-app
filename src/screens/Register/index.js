@@ -116,8 +116,7 @@ export default function Register({navigation}) {
       setIsLoading(true);
       auth()
         .createUserWithEmailAndPassword(email, password)
-        .then((userCredential) => {
-
+        .then(userCredential => {
           fireBaseOperation(name, email, userCredential?.user?.uid);
           console.log('User account created & signed in!');
           setIsLoading(false);
@@ -194,7 +193,7 @@ export default function Register({navigation}) {
               onGoogleButtonPress()
                 .then(userCredential =>
                   fireBaseOperation(
-                    userCredential.user.displayName,
+                    userCredential.user.email,
                     userCredential.user.displayName,
                     userCredential.user.uid,
                   ),
@@ -212,7 +211,7 @@ export default function Register({navigation}) {
               onFacebookButtonPress()
                 .then(userCredential =>
                   fireBaseOperation(
-                    userCredential.user.displayName,
+                    userCredential.user.email,
                     userCredential.user.displayName,
                     userCredential.user.uid,
                   ),

@@ -167,7 +167,7 @@ export default function Login() {
               onGoogleButtonPress()
                 .then(userCredential =>
                   fireBaseOperation(
-                    userCredential.user.displayName,
+                    userCredential.user.email,
                     userCredential.user.displayName,
                     userCredential.user.uid,
                   ),
@@ -184,7 +184,7 @@ export default function Login() {
             onPress={() =>
               onFacebookButtonPress().then(userCredential =>
                 fireBaseOperation(
-                  userCredential.user.displayName,
+                  userCredential.user.email,
                   userCredential.user.displayName,
                   userCredential.user.uid,
                 ),
