@@ -11,9 +11,72 @@ export const topCarData = [
       'https://images.unsplash.com/photo-1704340142770-b52988e5b6eb?q=80&w=2900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     ],
-    aboutCar:'This is the test data which is intended to tell about the car and this data will tell about the different and difeerent cars. About the model of cars etc and etc',
-    moreDetails:{Fuel: 'Gasoline', ['Interior Color']:'Black', Kiolmeters:'12.437km', Seats:4, Transmission:''
-    }
+    aboutCar:
+      'This is the test data which is intended to tell about the car and this data will tell about the different and difeerent cars. About the model of cars etc and etc',
+    moreDetails: {
+      Fuel: 'Gasoline',
+      ['Interior Color']: 'Black',
+      Kiolmeters: '12.437km',
+      Seats: 4,
+      Transmission: '6-speed automatic',
+    },
+    hostDetails: {
+      name: 'Jasvir Singh',
+      photo:
+        'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      address: 'Test address',
+      ratings: 4.5,
+    },
+    reviewsAndComments: [
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+    ],
   },
   {
     name: 'Tesla model X-2023',
@@ -22,6 +85,77 @@ export const topCarData = [
     fare: '15',
     image:
       'https://images.unsplash.com/photo-1560591199-cb0edbb6f491?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    moreImages: [
+      'https://images.unsplash.com/photo-1585011664466-b7bbe92f34ef?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      'https://images.unsplash.com/photo-1704340142770-b52988e5b6eb?q=80&w=2900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    ],
+    aboutCar:
+      'This is the test data which is intended to tell about the car and this data will tell about the different and difeerent cars. About the model of cars etc and etc',
+    moreDetails: {
+      Fuel: 'Gasoline',
+      ['Interior Color']: 'Black',
+      Kiolmeters: '12.437km',
+      Seats: 4,
+      Transmission: '6-speed automatic',
+    },
+    hostDetails: {
+      name: 'Jasvir Singh',
+      photo:
+        'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      address: 'Test address',
+      ratings: 4.5,
+    },
+    reviewsAndComments: [
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+    ],
   },
   {
     name: 'Tata model X-2023',
@@ -30,6 +164,77 @@ export const topCarData = [
     fare: '13',
     image:
       'https://images.unsplash.com/photo-1625865415981-4a3f296d4b50?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    moreImages: [
+      'https://images.unsplash.com/photo-1585011664466-b7bbe92f34ef?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      'https://images.unsplash.com/photo-1704340142770-b52988e5b6eb?q=80&w=2900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    ],
+    aboutCar:
+      'This is the test data which is intended to tell about the car and this data will tell about the different and difeerent cars. About the model of cars etc and etc',
+    moreDetails: {
+      Fuel: 'Gasoline',
+      ['Interior Color']: 'Black',
+      Kiolmeters: '12.437km',
+      Seats: 4,
+      Transmission: '6-speed automatic',
+    },
+    hostDetails: {
+      name: 'Jasvir Singh',
+      photo:
+        'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      address: 'Test address',
+      ratings: 4.5,
+    },
+    reviewsAndComments: [
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+    ],
   },
   {
     name: 'Vintage Car',
@@ -38,5 +243,76 @@ export const topCarData = [
     fare: '50',
     image:
       'https://images.unsplash.com/photo-1532751203793-812308a10d8e?q=80&w=2746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    moreImages: [
+      'https://images.unsplash.com/photo-1585011664466-b7bbe92f34ef?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      'https://images.unsplash.com/photo-1704340142770-b52988e5b6eb?q=80&w=2900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    ],
+    aboutCar:
+      'This is the test data which is intended to tell about the car and this data will tell about the different and difeerent cars. About the model of cars etc and etc',
+    moreDetails: {
+      Fuel: 'Gasoline',
+      ['Interior Color']: 'Black',
+      Kiolmeters: '12.437km',
+      Seats: 4,
+      Transmission: '6-speed automatic',
+    },
+    hostDetails: {
+      name: 'Jasvir Singh',
+      photo:
+        'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      address: 'Test address',
+      ratings: 4.5,
+    },
+    reviewsAndComments: [
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+      },
+    ],
   },
 ];
