@@ -6,4 +6,7 @@ export const Screen_Routes = {
   Home:'Home',
   HomeNavigator:'HomeNavigator',
   PromoDetails:'PromoDetails',
+  CarDetails : 'CarDetails',
+  AllReviews:'AllReviews',
+  Checkout:'Checkout',
 };

@@ -13,13 +13,13 @@ export const topCarData = [
     ],
     aboutCar:
       'This is the test data which is intended to tell about the car and this data will tell about the different and difeerent cars. About the model of cars etc and etc',
-    moreDetails: {
-      Fuel: 'Gasoline',
-      ['Interior Color']: 'Black',
-      Kiolmeters: '12.437km',
-      Seats: 4,
-      Transmission: '6-speed automatic',
-    },
+    moreDetails: [
+      {key: ' Fuel', value: 'Gasoline'},
+      {key: ' Interior Color', value: 'Black'},
+      {key: ' Kiolmeters', value: '12.437km'},
+      {key: ' Seats', value: '4'},
+      {key: ' Transmission', value: '6-speed automatic'},
+    ],
     hostDetails: {
       name: 'Jasvir Singh',
       photo:
@@ -35,6 +35,25 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
+      },
+      {
+        name: 'test name',
+        photo:
+          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ratings: 4.6,
+        comment:
+          'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
       {
         name: 'test name',
@@ -51,6 +70,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
       {
         name: 'test name',
@@ -59,22 +79,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
-      },
-      {
-        name: 'test name',
-        photo:
-          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        ratings: 4.6,
-        comment:
-          'This is the test comment by the user, the comments will be further shown in it.',
-      },
-      {
-        name: 'test name',
-        photo:
-          'https://images.unsplash.com/photo-1575540325855-4b5d285a3845?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        ratings: 4.6,
-        comment:
-          'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
     ],
   },
@@ -92,13 +97,13 @@ export const topCarData = [
     ],
     aboutCar:
       'This is the test data which is intended to tell about the car and this data will tell about the different and difeerent cars. About the model of cars etc and etc',
-    moreDetails: {
-      Fuel: 'Gasoline',
-      ['Interior Color']: 'Black',
-      Kiolmeters: '12.437km',
-      Seats: 4,
-      Transmission: '6-speed automatic',
-    },
+    moreDetails: [
+      {key: ' Fuel', value: 'Gasoline'},
+      {key: ' Interior Color', value: 'Black'},
+      {key: ' Kiolmeters', value: '12.437km'},
+      {key: ' Seats', value: '4'},
+      {key: ' Transmission', value: '6-speed automatic'},
+    ],
     hostDetails: {
       name: 'Jasvir Singh',
       photo:
@@ -114,6 +119,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
       {
         name: 'test name',
@@ -122,6 +128,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
       {
         name: 'test name',
@@ -130,6 +137,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
       {
         name: 'test name',
@@ -138,6 +146,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
       {
         name: 'test name',
@@ -146,6 +155,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
       {
         name: 'test name',
@@ -154,6 +164,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
     ],
   },
@@ -171,13 +182,13 @@ export const topCarData = [
     ],
     aboutCar:
       'This is the test data which is intended to tell about the car and this data will tell about the different and difeerent cars. About the model of cars etc and etc',
-    moreDetails: {
-      Fuel: 'Gasoline',
-      ['Interior Color']: 'Black',
-      Kiolmeters: '12.437km',
-      Seats: 4,
-      Transmission: '6-speed automatic',
-    },
+    moreDetails: [
+      {key: ' Fuel', value: 'Gasoline'},
+      {key: ' Interior Color', value: 'Black'},
+      {key: ' Kiolmeters', value: '12.437km'},
+      {key: ' Seats', value: '4'},
+      {key: ' Transmission', value: '6-speed automatic'},
+    ],
     hostDetails: {
       name: 'Jasvir Singh',
       photo:
@@ -193,6 +204,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
       {
         name: 'test name',
@@ -201,6 +213,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
       {
         name: 'test name',
@@ -209,6 +222,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
       {
         name: 'test name',
@@ -217,6 +231,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
       {
         name: 'test name',
@@ -225,6 +240,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
       {
         name: 'test name',
@@ -233,6 +249,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
     ],
   },
@@ -250,13 +267,13 @@ export const topCarData = [
     ],
     aboutCar:
       'This is the test data which is intended to tell about the car and this data will tell about the different and difeerent cars. About the model of cars etc and etc',
-    moreDetails: {
-      Fuel: 'Gasoline',
-      ['Interior Color']: 'Black',
-      Kiolmeters: '12.437km',
-      Seats: 4,
-      Transmission: '6-speed automatic',
-    },
+    moreDetails: [
+      {key: ' Fuel', value: 'Gasoline'},
+      {key: ' Interior Color', value: 'Black'},
+      {key: ' Kiolmeters', value: '12.437km'},
+      {key: ' Seats', value: '4'},
+      {key: ' Transmission', value: '6-speed automatic'},
+    ],
     hostDetails: {
       name: 'Jasvir Singh',
       photo:
@@ -272,6 +289,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
       {
         name: 'test name',
@@ -280,6 +298,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
       {
         name: 'test name',
@@ -288,6 +307,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
       {
         name: 'test name',
@@ -296,6 +316,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
       {
         name: 'test name',
@@ -304,6 +325,7 @@ export const topCarData = [
         ratings: 4.6,
         comment:
           'This is the test comment by the user, the comments will be further shown in it.',
+        date: 'Aug 21, 2024',
       },
       {
         name: 'test name',

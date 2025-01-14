@@ -1,11 +1,16 @@
-import {Image, Text, View} from 'react-native';
+import {Image, Pressable, Text, View} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
 import {topCarData} from '../../../../../../../utils/constants/dummyData/topCarsData';
 import {style} from './style';
+import {Screen_Routes} from '../../../../../../../utils/constants/Routes';
 
 export default function TopCar({data}) {
+  const navigation = useNavigation();
   return (
-    <View style={style.container}>
+    <Pressable
+      style={style.container}
+      onPress={() => navigation.navigate(Screen_Routes.CarDetails, {data})}>
       <Image
         source={{uri: data.image}}
         height={190}
@@ -22,7 +27,6 @@ export default function TopCar({data}) {
           }}>{`(${data.reviews} review)`}</Text>
       </View>
       <Text style={style.currencyText}>£{data.fare}.00 / day</Text>
-    </View>
+    </Pressable>
   );
 }
- 
