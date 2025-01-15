@@ -18,4 +18,4 @@ export default function Review({reviewData}){
 </View>
 </View>
   </View>
-}
+} 

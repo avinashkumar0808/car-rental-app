@@ -8,4 +8,5 @@ export const colors = {
   green:'green',
   white:'#fff',
   blue:'blue',
+  backdropColor:'rgba(0, 0, 0, 0.6)'
 }

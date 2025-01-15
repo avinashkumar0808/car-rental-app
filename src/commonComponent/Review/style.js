@@ -29,8 +29,11 @@ ratingsOnImage:{
   width:scale(70),
   textAlign:'center',
   backgroundColor:colors.white,
-  bottom:0,
-fontSize:scale(10)
+  bottom:scale(-10),
+fontSize:scale(10),
+borderRadius:scale(8),
+borderWidth:scale(0.3),
+borderColor:colors.borderColor
 },
 nameAndDateContainer:{
   flexDirection:'row',
@@ -54,6 +57,6 @@ dateText:{
 },
 commentText:{
   color:colors.lightGray
-}
+},
 
 })

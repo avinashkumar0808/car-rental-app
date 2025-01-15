@@ -3,7 +3,7 @@ import {useNavigation} from '@react-navigation/native';
 
 import {style} from './style';
 import CustomText from '../../../../commonComponent/CutstomText';
-import ListKeyValue from './component/ListKeyValue';
+import ListKeyValue from '../../../../commonComponent/ListKeyValue';
 import HostDetails from './component/HostDetails';
 import Review from '../../../../commonComponent/Review';
 import {Screen_Routes} from '../../../../../utils/constants/Routes';

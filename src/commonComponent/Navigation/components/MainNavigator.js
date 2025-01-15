@@ -32,7 +32,7 @@ export default function MainNavigator() {
         header:()=><Header/>
       }} />
       <MainNavigatorStack.Screen name={Screen_Routes.Checkout} component={Checkout} options={{
-        headerShown:true,
+        headerShown:false,
         header:()=><Header/>
       }}/>
     </MainNavigatorStack.Navigator>

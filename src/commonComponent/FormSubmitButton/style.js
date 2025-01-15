@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { colors } from "../../../utils/constants/colors";
+import { poppinsRegular } from "../../../utils/constants/fontFamily";
 
 export const style = StyleSheet.create({
   button:{
@@ -11,6 +12,7 @@ export const style = StyleSheet.create({
   text:{
 textAlign:'center',
 color:'#fff',
-fontWeight:"600"
+fontWeight:"600",
+fontFamily:poppinsRegular,
   }
 })

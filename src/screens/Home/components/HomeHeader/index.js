@@ -1,7 +1,8 @@
 import {Text, View, Animated, useAnimatedValue} from 'react-native';
 import {SvgXml} from 'react-native-svg';
 import GetLocation from 'react-native-get-location';
-import {useEffect, useState,memo} from 'react';
+import {useEffect, useState, memo} from 'react';
+import {useContext} from 'react';
 
 import {
   bellIcon,
@@ -9,15 +10,19 @@ import {
   searchIcon,
 } from '../../../../../utils/constants/icons';
 import {style} from './style';
+import {UserContext} from '../../../../store/userContext/User';
 
 const HomeHeader = memo(function HomeHeader() {
+  const {address, updateAddress} = useContext(UserContext);
   const intialOpacity = useAnimatedValue(0);
-  const [longLat, setLongLat] = useState([]);
+
   GetLocation.getCurrentPosition({
     enableHighAccuracy: true,
   })
     .then(location => {
-      setLongLat([location?.longitude, location?.latitude]);
+      if (address.length === 0) {
+        updateAddress(location.longitude, location.latitude);
+      }
     })
     .catch(error => {
       const {code, message} = error;
@@ -41,13 +46,13 @@ const HomeHeader = memo(function HomeHeader() {
           <Text style={style.leftTopText}>Your location</Text>
           <SvgXml xml={downArrowIcon} height={30} width={25} />
         </View>
-        {longLat.length !== 0 ? (
+        {address.length !== 0 ? (
           <View style={style.leftTopLargeTextContainer}>
             <Text style={style.leftTopLargeText}>
-              Longitude:{`${longLat[0]}`}
+              Longitude:{`${address[0]}`}
             </Text>
             <Text
-              style={style.leftTopLargeText}>{`Latitude: ${longLat[1]}`}</Text>
+              style={style.leftTopLargeText}>{`Latitude: ${address[1]}`}</Text>
           </View>
         ) : (
           <Animated.View

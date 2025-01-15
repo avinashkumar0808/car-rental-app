@@ -1,5 +1,5 @@
 import { View } from "react-native";
-import CustomText from "../../../../../../commonComponent/CutstomText";
+import CustomText from "../CutstomText";
 import { style } from "./style";
 
 export default function ListKeyValue({keyValue, value}){

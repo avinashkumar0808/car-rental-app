@@ -7,6 +7,7 @@ export const style = StyleSheet.create({
     flex:1,
     backgroundColor:colors.white,
     paddingHorizontal:scale(15),
+    position:'relative'
   }, 
   headingText:{
     fontSize:scale(23),
@@ -20,9 +21,11 @@ export const style = StyleSheet.create({
   },
 keyValueContainer:{
   marginBottom:scale(15),
+  paddingRight:scale(80),
 }, 
 additionalContainer:{
   width:'98%',
+  marginBottom:scale(30)
 },
 discountCodeButton:{
   paddingVertical:scale(15),
@@ -33,6 +36,9 @@ discountCodeButton:{
   position:'relative',
 
 },
+discountCodeButtonText:{
+  color:colors.darkBlue
+},
 leftCircle:{
   height:scale(28),
   width:scale(28),
@@ -41,20 +47,31 @@ leftCircle:{
   top:'50%',
   borderRadius:'100%',
   borderRightColor:colors.borderColor,
-  borderRightWidth:scale(1.5),
+  borderRightWidth:scale(1.8),  
   backgroundColor:colors.white,
+
 
 },
 rightCircle:{
-  height:scale(26),
-  width:scale(26),
+  height:scale(28),
+  width:scale(28),
   right:scale(-18),
   position:'absolute',
   top:'50%',
   borderRadius:'100%',
   borderLeftColor:colors.borderColor,
-  borderLeftWidth:scale(1.5),
+  borderLeftWidth:scale(1.8),
   backgroundColor:colors.white,
 
+},
+totalContainer:{
+  paddingVertical:scale(10),
+  borderStyle:'dashed',
+  borderTopColor:colors.borderColor,
+  borderTopWidth:scale(2)
+},
+submitButtonContainer:{
+  paddingBottom:scale(10),
 }
+
 })
