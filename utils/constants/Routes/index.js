@@ -9,4 +9,10 @@ export const Screen_Routes = {
   CarDetails : 'CarDetails',
   AllReviews:'AllReviews',
   Checkout:'Checkout',
+  ProtectionPlans:'ProtectionPlans',
+  FinalCheckout:'FinalCheckout',
+  Car:'Car',
+  Profile:'Profile',
+  Add:'Add',
+  Chat:'Chat'
 };

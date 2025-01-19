@@ -8,5 +8,6 @@ export const colors = {
   green:'green',
   white:'#fff',
   blue:'blue',
-  backdropColor:'rgba(0, 0, 0, 0.6)'
+  backdropColor:'rgba(0, 0, 0, 0.6)',
+  boderBlue:'#2952CC',
 }

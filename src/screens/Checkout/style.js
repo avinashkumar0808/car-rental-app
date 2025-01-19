@@ -21,7 +21,7 @@ export const style = StyleSheet.create({
   },
 keyValueContainer:{
   marginBottom:scale(15),
-  paddingRight:scale(80),
+width:'98%',
 }, 
 additionalContainer:{
   width:'98%',
@@ -34,6 +34,7 @@ discountCodeButton:{
   borderWidth:scale(1),
   marginVertical:scale(15),
   position:'relative',
+  borderRadius:scale(10)
 
 },
 discountCodeButtonText:{

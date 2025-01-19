@@ -24,6 +24,81 @@ export const searchIcon = `<svg viewBox="0 0 24 24" fill="none" xmlns="http://ww
 
 export const downArrowIcon = `<svg fill="#A0A9BF" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.011 512.011" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path> </g> </g> </g></svg>`;
 
-export const rightArrow = `<svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#192252"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" fill="#192252"></path></g></svg>`
+export const rightArrow = `<svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#192252"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" fill="#192252"></path></g></svg>`;
 
 export const crossIcon = `<svg viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.96967 16.4697C6.67678 16.7626 6.67678 17.2374 6.96967 17.5303C7.26256 17.8232 7.73744 17.8232 8.03033 17.5303L6.96967 16.4697ZM13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697L13.0303 12.5303ZM11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303L11.9697 11.4697ZM18.0303 7.53033C18.3232 7.23744 18.3232 6.76256 18.0303 6.46967C17.7374 6.17678 17.2626 6.17678 16.9697 6.46967L18.0303 7.53033ZM13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303L13.0303 11.4697ZM16.9697 17.5303C17.2626 17.8232 17.7374 17.8232 18.0303 17.5303C18.3232 17.2374 18.3232 16.7626 18.0303 16.4697L16.9697 17.5303ZM11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697L11.9697 12.5303ZM8.03033 6.46967C7.73744 6.17678 7.26256 6.17678 6.96967 6.46967C6.67678 6.76256 6.67678 7.23744 6.96967 7.53033L8.03033 6.46967ZM8.03033 17.5303L13.0303 12.5303L11.9697 11.4697L6.96967 16.4697L8.03033 17.5303ZM13.0303 12.5303L18.0303 7.53033L16.9697 6.46967L11.9697 11.4697L13.0303 12.5303ZM11.9697 12.5303L16.9697 17.5303L18.0303 16.4697L13.0303 11.4697L11.9697 12.5303ZM13.0303 11.4697L8.03033 6.46967L6.96967 7.53033L11.9697 12.5303L13.0303 11.4697Z" fill="#192252"></path> </g></svg>`;
+
+export const tick = ` <svg viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.5 12.5L10.167 17L19.5 8" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>`;
+
+export const home = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_136_225)">
+<g clip-path="url(#clip1_136_225)">
+<path d="M2 12.2039C2 9.91549 2 8.77128 2.5192 7.82274C3.0384 6.87421 3.98695 6.28551 5.88403 5.10813L7.88403 3.86687C9.88939 2.62229 10.8921 2 12 2C13.1079 2 14.1106 2.62229 16.116 3.86687L18.116 5.10812C20.0131 6.28551 20.9616 6.87421 21.4808 7.82274C22 8.77128 22 9.91549 22 12.2039V13.725C22 17.6258 22 19.5763 20.8284 20.7881C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.7881C2 19.5763 2 17.6258 2 13.725V12.2039Z" stroke="#192252" stroke-width="2.7439"/>
+<path d="M12 15V18" stroke="#192252" stroke-width="2.7439" stroke-linecap="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_136_225">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+<clipPath id="clip1_136_225">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+`;
+
+export const activeHome = `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#192252"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5192 7.82274C2 8.77128 2 9.91549 2 12.2039V13.725C2 17.6258 2 19.5763 3.17157 20.7881C4.34315 22 6.22876 22 10 22H14C17.7712 22 19.6569 22 20.8284 20.7881C22 19.5763 22 17.6258 22 13.725V12.2039C22 9.91549 22 8.77128 21.4808 7.82274C20.9616 6.87421 20.0131 6.28551 18.116 5.10812L16.116 3.86687C14.1106 2.62229 13.1079 2 12 2C10.8921 2 9.88939 2.62229 7.88403 3.86687L5.88403 5.10813C3.98695 6.28551 3.0384 6.87421 2.5192 7.82274ZM11.25 18C11.25 18.4142 11.5858 18.75 12 18.75C12.4142 18.75 12.75 18.4142 12.75 18V15C12.75 14.5858 12.4142 14.25 12 14.25C11.5858 14.25 11.25 14.5858 11.25 15V18Z" fill="#192252"></path> </g></svg>`;
+
+export const carIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.51 2.82996H8.49C6 2.82996 5.45 4.06996 5.13 5.58996L4 11H20L18.87 5.58996C18.55 4.06996 18 2.82996 15.51 2.82996Z" stroke="#192252" stroke-width="2.7439" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21.99 19.82C22.1 20.99 21.16 22 19.96 22H18.08C17 22 16.85 21.54 16.66 20.97L16.46 20.37C16.18 19.55 16 19 14.56 19H9.43998C7.99998 19 7.78998 19.62 7.53998 20.37L7.33998 20.97C7.14998 21.54 6.99998 22 5.91998 22H4.03998C2.83998 22 1.89998 20.99 2.00998 19.82L2.56998 13.73C2.70998 12.23 2.99998 11 5.61998 11H18.38C21 11 21.29 12.23 21.43 13.73L21.99 19.82Z" stroke="#192252" stroke-width="2.7439" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 8H3" stroke="#192252" stroke-width="2.7439" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 8H20" stroke="#192252" stroke-width="2.7439" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 3V5" stroke="#192252" stroke-width="2.7439" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.5 5H13.5" stroke="#192252" stroke-width="2.7439" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 15H9" stroke="#192252" stroke-width="2.7439" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 15H18" stroke="#192252" stroke-width="2.7439" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+export const activeCar = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.75 7.99813C21.75 8.40812 21.41 8.74813 21 8.74813H3C2.59 8.74813 2.25 8.40812 2.25 7.99813C2.25 7.58813 2.59 7.24813 3 7.24813H4.02L4.4 5.43813C4.76 3.68813 5.51 2.07812 8.49 2.07812H15.51C18.49 2.07812 19.24 3.68813 19.6 5.43813L19.98 7.24813H21C21.41 7.24813 21.75 7.58813 21.75 7.99813Z" fill="#192252"/>
+<path d="M22.1816 13.66C22.0316 12.01 21.5915 10.25 18.3815 10.25H5.62155C2.41155 10.25 1.98155 12.01 1.82155 13.66L1.26155 19.75C1.19155 20.51 1.44155 21.27 1.96155 21.84C2.49155 22.42 3.24155 22.75 4.04155 22.75H5.92155C7.54155 22.75 7.85155 21.82 8.05155 21.21L8.25155 20.61C8.48155 19.92 8.54155 19.75 9.44155 19.75H14.5616C15.4616 19.75 15.4916 19.85 15.7516 20.61L15.9516 21.21C16.1516 21.82 16.4616 22.75 18.0816 22.75H19.9615C20.7516 22.75 21.5116 22.42 22.0416 21.84C22.5616 21.27 22.8116 20.51 22.7416 19.75L22.1816 13.66ZM9.00155 15.75H6.00155C5.59155 15.75 5.25155 15.41 5.25155 15C5.25155 14.59 5.59155 14.25 6.00155 14.25H9.00155C9.41155 14.25 9.75155 14.59 9.75155 15C9.75155 15.41 9.41155 15.75 9.00155 15.75ZM18.0016 15.75H15.0016C14.5916 15.75 14.2516 15.41 14.2516 15C14.2516 14.59 14.5916 14.25 15.0016 14.25H18.0016C18.4116 14.25 18.7516 14.59 18.7516 15C18.7516 15.41 18.4116 15.75 18.0016 15.75Z" fill="#192252"/>
+</svg>
+`;
+export const addIcon = `<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="32" fill="#192252"/>
+<path d="M40 33H24C23.4533 33 23 32.5467 23 32C23 31.4533 23.4533 31 24 31H40C40.5467 31 41 31.4533 41 32C41 32.5467 40.5467 33 40 33Z" fill="white"/>
+<path d="M32 41C31.4533 41 31 40.5467 31 40V24C31 23.4533 31.4533 23 32 23C32.5467 23 33 23.4533 33 24V40C33 40.5467 32.5467 41 32 41Z" fill="white"/>
+</svg>
+`;
+
+export const chatIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_136_141)">
+<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22Z" stroke="#192252" stroke-width="2.74"/>
+</g>
+<defs>
+<clipPath id="clip0_136_141">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+`;
+
+export const activeChatIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22Z" fill="#192252" stroke="#192252"/>
+</svg>
+`;
+
+export const profileIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 10C14.2091 10 16 8.20914 16 6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6C8 8.20914 9.79086 10 12 10Z" stroke="#1C274C" stroke-width="2.74"/>
+<path d="M12 21C15.866 21 19 19.2091 19 17C19 14.7909 15.866 13 12 13C8.13401 13 5 14.7909 5 17C5 19.2091 8.13401 21 12 21Z" stroke="#1C274C" stroke-width="2.74"/>
+</svg>
+`;
+
+export const activeProfileIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 10C14.2091 10 16 8.20914 16 6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6C8 8.20914 9.79086 10 12 10Z" fill="#1C274C"/>
+<path d="M12 21C15.866 21 19 19.2091 19 17C19 14.7909 15.866 13 12 13C8.13401 13 5 14.7909 5 17C5 19.2091 8.13401 21 12 21Z" fill="#1C274C"/>
+</svg>
+`;

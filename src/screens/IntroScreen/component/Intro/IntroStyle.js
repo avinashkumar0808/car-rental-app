@@ -1,22 +1,23 @@
 import {StyleSheet, Dimensions} from 'react-native';
-console.log(Dimensions.get('window'));
+import { scale } from 'react-native-size-matters';
+
+
 export const style = StyleSheet.create({
   container: {
     backgroundColor: 'white',
 
     width: Dimensions.get('window').width,
     height: Dimensions.get('window').height,
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
+    padding:scale(15)
+  
   },
   imageContainer: {
     overflow: 'hidden',
     borderRadius: '10%',
   },
   image: {
-    height: 350,
-    width: 360,
+    height: scale(350),
+    width: scale(360),
     objectFit: 'cover',
   },
   textContainer: {

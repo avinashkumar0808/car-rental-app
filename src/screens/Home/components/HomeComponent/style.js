@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 import { colors } from "../../../../../utils/constants/colors";
 import { poppinsExtraBold, poppinsRegular } from "../../../../../utils/constants/fontFamily";
+import { scale } from "react-native-size-matters";
 
 export const style = StyleSheet.create({
   container:{
@@ -54,5 +55,10 @@ paddingHorizontal:15,
     fontSize:14,
     color:colors.lightGray,
     fontFamily:poppinsRegular
+  },
+  homeFooter:{
+    height:scale(70),
+    width:'100%',
+    backgroundColor:"red",
   }
 })

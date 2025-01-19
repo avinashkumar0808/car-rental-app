@@ -1,4 +1,4 @@
-import {Image, Text, View, TouchableOpacity} from 'react-native';
+import {Image, Text, View, TouchableOpacity, ScrollView} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
 import {style} from './IntroStyle';
@@ -9,7 +9,7 @@ export default function Intro({image, heading, textContent}) {
   const navigation = useNavigation();
 
   return ( 
-    <View style={style.container}>
+    <ScrollView style={style.container}>
       <View style={style.imageContainer}>
         <Image
           source={{
@@ -22,6 +22,7 @@ export default function Intro({image, heading, textContent}) {
         <Text style={style.headingText}>{heading}</Text>
         <Text style={style.textParagraph}>{textContent}</Text>
       </View>
-    </View>
+    </ScrollView>
   );
 }
+ 

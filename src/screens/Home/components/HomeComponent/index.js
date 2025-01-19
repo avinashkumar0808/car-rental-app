@@ -4,10 +4,12 @@ import {style} from './style';
 import HomeHeader from '../HomeHeader';
 import OfferSwipper from '../OfferSwipper';
 import TopCarsSwiper from '../TopCarsSwiper';
+import BottomTab from '../../../../commonComponent/BottomTab';
 
 
 export default function HomeComponent() {
   return (
+ <>
     <ScrollView style={style.container}>
       <HomeHeader />
       <OfferSwipper />
@@ -19,5 +21,7 @@ export default function HomeComponent() {
       </View>
 <TopCarsSwiper/>
     </ScrollView>
+ <BottomTab/>
+ </>
   );
 }

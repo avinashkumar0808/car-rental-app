@@ -1,6 +1,7 @@
 import {Pressable, ScrollView, View} from 'react-native';
 import {useContext, useState} from 'react';
 
+
 import CustomText from '../../commonComponent/CutstomText';
 import {style} from './style';
 import CheckoutCarDetails from './components/CheckoutCarDetails';
@@ -11,6 +12,7 @@ import SubmitButton from '../../commonComponent/FormSubmitButton';
 import Backdrop from '../../commonComponent/Backdrop';
 import Header from '../../commonComponent/Header';
 import Modal from './components/Modal';
+import { Screen_Routes } from '../../../utils/constants/Routes';
 
 export default function Checkout({navigation, route}) {
   const [isBackdropOpen, setIsBackDropOpen] = useState(false);
@@ -18,6 +20,7 @@ export default function Checkout({navigation, route}) {
   const {user, address} = useContext(UserContext);
   const [total, setTotal] = useState(+currData.fare+5);
   const [discountCodeText, setDiscountCodeText] = useState(`Use a discount code`);
+
   return (
     <>
       <Header />
@@ -31,12 +34,13 @@ export default function Checkout({navigation, route}) {
           RENTER INFORMATION
         </CustomText>
         <View style={style.keyValueContainer}>
-          <ListKeyValue keyValue={'Full name'} value={user.name} />
+          <ListKeyValue keyValue={'Full name'} value={user.name} sm />
           <ListKeyValue
             keyValue={'Address line'}
             value={`Longitude:${address[0]}, Latitude:${address[1]}`}
+             sm
           />
-          <ListKeyValue keyValue={'Email address'} value={user.email} />
+          <ListKeyValue keyValue={'Email address'} value={user.email} sm />
         </View>
 
         <CustomText style={style.carDetailHeadingText}>DISCOUNT</CustomText>
@@ -44,7 +48,7 @@ export default function Checkout({navigation, route}) {
           <CustomText style={style.discountCodeButtonText}>
             {discountCodeText}
           </CustomText>
-          <View style={style.leftCircle} />
+          <View style={style.leftCircle} /> 
           <View style={style.rightCircle} />
         </Pressable>
         <CustomText style={style.carDetailHeadingText}>
@@ -62,7 +66,7 @@ export default function Checkout({navigation, route}) {
           <ListKeyValue keyValue={'Total'} value={`£${total}.00`} />
         </View>
         <View style={style.submitButtonContainer}>
-          <SubmitButton text={'Payment'} />
+          <SubmitButton text={'Payment'} onPress={()=>navigation.navigate(Screen_Routes.ProtectionPlans)}/>
         </View>
       </ScrollView>
      {isBackdropOpen &&  <Backdrop>
