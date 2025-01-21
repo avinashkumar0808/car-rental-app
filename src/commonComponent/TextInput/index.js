@@ -6,13 +6,14 @@ import {style} from './style';
 import {colors} from '../../../utils/constants/colors';
 import {eye} from '../../../utils/constants/icons';
 import {useState} from 'react';
+import CustomText from '../CutstomText';
 
 const Input = forwardRef(function Input(
   {
     label,
     placeholder,
     password,
-
+    textArea,
     value,
     keyboardType,
     returnKeyType,
@@ -28,11 +29,11 @@ const Input = forwardRef(function Input(
 
   return (
     <View style={style.container}>
-      <Text style={style.text}>{label}</Text>
+      <CustomText style={style.text}>{label}</CustomText>
       <View>
         <TextInput
           placeholder={placeholder}
-          style={style.input}
+          style={textArea ? style.textArea : style.input}
           placeholderTextColor={colors.lightGray}
           secureTextEntry={!visible && password}
           onChangeText={newText => changeFun(newText)}
@@ -45,6 +46,8 @@ const Input = forwardRef(function Input(
               nextRef.current.focus();
             }
           }}
+          multiline={textArea}
+        textAlignVertical={textArea?'top':'center'}
           {...props}
         />
         {password && (

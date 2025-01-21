@@ -33,7 +33,6 @@ export default function Home() {
         name={Screen_Routes.Home}
       />
       <BottomTabNavigator.Screen component={Cars} name={Screen_Routes.Car}/>
-      <BottomTabNavigator.Screen component={AddCar} name={Screen_Routes.Add}/>
       <BottomTabNavigator.Screen component={Chat} name={Screen_Routes.Chat}/>
       <BottomTabNavigator.Screen component={Profile} name={Screen_Routes.Profile}/>
     </BottomTabNavigator.Navigator>

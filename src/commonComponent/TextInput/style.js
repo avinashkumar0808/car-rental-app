@@ -18,6 +18,19 @@ export const style = StyleSheet.create({
     paddingLeft:15
     
   },
+  textArea:{
+    borderWidth: 1,
+    color: colors.lightGray,
+    borderColor: colors.lightGray,
+    marginTop: 10,
+    paddingRight: 45,
+    overflow:'hidden',
+    borderRadius: 15,
+    height:120,
+    paddingLeft:15,
+  
+    
+  },
   text: {
     fontWeight: '700',
     color: colors.darkBlue,
