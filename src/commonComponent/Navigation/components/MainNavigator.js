@@ -65,9 +65,18 @@ export default function MainNavigator() {
           header: () => <Header />,
         }}
       />
-      <MainNavigatorStack.Screen component={AddCar} name={Screen_Routes.Add} />
-      <MainNavigatorStack.Screen component={AddCarScreen2} name={Screen_Routes.AddCarScreen2}/>
-      <MainNavigatorStack.Screen component={AddCarScreen3} name={Screen_Routes.AddCarScreen3}/>
+      <MainNavigatorStack.Screen component={AddCar} name={Screen_Routes.Add}  options={{
+          headerShown: true,
+          header: () => <Header />,
+        }} />
+      <MainNavigatorStack.Screen component={AddCarScreen2} name={Screen_Routes.AddCarScreen2}  options={{
+          headerShown: true,
+          header: () => <Header />,
+        }}/>
+      <MainNavigatorStack.Screen component={AddCarScreen3} name={Screen_Routes.AddCarScreen3}  options={{
+          headerShown: true,
+          header: () => <Header />,
+        }}/>
       <MainNavigatorStack.Screen component={AddCarScreen4} name={Screen_Routes.AddCarScreen4}/>
     </MainNavigatorStack.Navigator>
   );

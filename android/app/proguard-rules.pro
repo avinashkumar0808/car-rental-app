@@ -8,3 +8,4 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # Add any project specific keep options here:
+# For react-native-image-crop-picker -keep class com.reactnative.imagecroppicker.** { *; } -keep class com.yalantis.ucrop.** { *; }

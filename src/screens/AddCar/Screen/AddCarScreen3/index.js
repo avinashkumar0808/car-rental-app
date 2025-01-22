@@ -44,8 +44,8 @@ export default function AddCarScreen3({navigation, route}) {
   const parent = useRef([ref1, ref2, ref3]);
   return (
     <>
-      <ScrollView style={style.container}>
-        <Header />
+      <ScrollView style={style.container} keyboardShouldPersistTaps='handled' keyboardDismissMode='none'>
+
         <AddCarHeader step={3} />
         <View style={style.inputContainer}>
           <DropdownComponent
@@ -63,6 +63,7 @@ export default function AddCarScreen3({navigation, route}) {
             ref={parent}
             refIndex={0}
             changeFun={setKilometers}
+            keyboardType={'numeric'}
           />
 
           <Input
@@ -73,6 +74,7 @@ export default function AddCarScreen3({navigation, route}) {
             refIndex={1}
             autoCapitalize="none"
             changeFun={setSeats}
+            keyboardType={'numeric'}
           />
           <Input
             label={'Transmission'}

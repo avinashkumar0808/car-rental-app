@@ -1,19 +1,20 @@
 import {StyleSheet} from 'react-native';
 
 import {colors} from '../../../utils/constants/colors';
+import { scale } from 'react-native-size-matters';
 
 export const style = StyleSheet.create({
   container: {
-    marginVertical: 15,
+    marginVertical: 10,
   },
   input: {
     borderWidth: 1,
     color: colors.lightGray,
     borderColor: colors.lightGray,
-    marginTop: 10,
+    marginTop: scale(10),
     paddingRight: 45,
     overflow:'hidden',
-    borderRadius: 15,
+    borderRadius: scale(12),
     height:50,
     paddingLeft:15
     
@@ -25,7 +26,7 @@ export const style = StyleSheet.create({
     marginTop: 10,
     paddingRight: 45,
     overflow:'hidden',
-    borderRadius: 15,
+    borderRadius: scale(12),
     height:120,
     paddingLeft:15,
   

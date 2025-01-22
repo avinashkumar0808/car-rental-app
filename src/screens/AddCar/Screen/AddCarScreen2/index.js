@@ -36,8 +36,8 @@ function handleContinueClick(){
 
   return (
     <>
-      <ScrollView style={style.container}>
-        <Header />
+      <ScrollView style={style.container} keyboardShouldPersistTaps='handle' keyboardDismissMode='none'>
+
         <AddCarHeader step={2} />
         <View style={style.inputContainer}>
           <Input

@@ -39,8 +39,8 @@ export default function AddCar({navigation, route}) {
 
   const parent = useRef([ref1, ref2, ref3]);
   return (
-    <ScrollView style={style.container}>
-      <Header />
+    <ScrollView style={style.container} keyboardShouldPersistTaps={'handled'}>
+
       <AddCarHeader step={1} />
       <View style={style.inputContainer}>
         <Input

@@ -9,10 +9,10 @@ export const styles = StyleSheet.create({
     padding: scale(16),
   },
   dropdown: {
-    height: scale(50),
+    height: scale(40),
     borderColor: colors.lightGray,
     borderWidth: scale(0.5),
-    borderRadius: scale(15),
+    borderRadius: scale(10),
     paddingHorizontal: scale(8),
     marginVertical:scale(10)
   },
@@ -50,5 +50,7 @@ export const styles = StyleSheet.create({
     iconStyle:{
       color:colors.borderColor,
       opacity:0.7,
+      height:scale(24),
+      width:scale(24)
     }
 });

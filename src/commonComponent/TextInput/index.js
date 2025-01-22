@@ -48,6 +48,7 @@ const Input = forwardRef(function Input(
           }}
           multiline={textArea}
         textAlignVertical={textArea?'top':'center'}
+        
           {...props}
         />
         {password && (
