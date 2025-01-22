@@ -19,8 +19,12 @@ export const style  = StyleSheet.create({
     color:colors.lightGray,
     fontSize:scale(15),
   }, 
-  image:{
-    height:'100%',
-    width:'100%'
+  imageContainer:{
+    height:200,
+    width:'100%',
+  },
+  imageInnerContainer:{
+    height:200,
+    width:'100%',
   }
 })

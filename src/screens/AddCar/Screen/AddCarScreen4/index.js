@@ -1,6 +1,6 @@
 import {Image, Pressable, ScrollView, View} from 'react-native';
 import BottomSheet from 'react-native-simple-bottom-sheet';
-import {useState, useRef} from 'react';
+import {useState, useRef, useEffect} from 'react';
 import ImagePicker from 'react-native-image-crop-picker';
 import {Camera, useCameraDevice} from 'react-native-vision-camera';
 
@@ -11,17 +11,18 @@ import {style} from './style';
 import SubmitButton from '../../../../commonComponent/FormSubmitButton';
 import Header from '../../../../commonComponent/Header';
 import AddCarHeader from '../../components/AddCarHeader';
-
 import CustomText from '../../../../commonComponent/CutstomText';
-
 import ImagePickerComp from '../../../../commonComponent/ImagePicker';
 import {SvgXml} from 'react-native-svg';
 import {
   addIconGrey,
+  cameraFlipIcon,
   crossIconWhite,
+  torchOff,
+  torchOn,
 } from '../../../../../utils/constants/icons';
 import Backdrop from '../../../../commonComponent/Backdrop';
-import ImageShow from './component/ImageShow';
+import ImageShow from '../../../../commonComponent/ImageShow';
 
 export default function AddCarScreen4({navigation, route}) {
   const [kilometers, setKilometers] = useState('');
@@ -37,6 +38,8 @@ export default function AddCarScreen4({navigation, route}) {
   const [isCameraOpen, setIsCameraOpen] = useState(false);
   const [isBackdropOpen, setIsBackdropOpen] = useState(false);
   const [backdropImage, setBackdropImage] = useState(null);
+  const [deviceVal, setDeviceVal] = useState('back');
+  const [isFlashOn, setIsFlashOn] = useState(false);
 
   const cameraRef = useRef();
   const ref1 = useRef();
@@ -44,7 +47,7 @@ export default function AddCarScreen4({navigation, route}) {
   const ref3 = useRef();
   const bottomSheetRef = useRef();
 
-  const device = useCameraDevice('back');
+  const device = useCameraDevice(deviceVal);
 
   async function handleClickPhoto(data) {
     const photo = await cameraRef.current.takePhoto();
@@ -98,6 +101,16 @@ export default function AddCarScreen4({navigation, route}) {
   async function openCamera() {
     setIsCameraOpen(true);
   }
+  function handleCameraChange() {
+    if (deviceVal === 'front') {
+      setDeviceVal('back');
+    } else {
+      setDeviceVal('front');
+    }
+  }
+  function toggleTorch() {
+    setIsFlashOn(prev => !prev);
+  }
   const parent = useRef([ref1, ref2, ref3]);
   return (
     <>
@@ -111,10 +124,42 @@ export default function AddCarScreen4({navigation, route}) {
               ref={cameraRef}
               photo
               photoQualityBalance="speed"
+              torch={isFlashOn ? 'on' : 'off'}
             />
             <Pressable
-              style={style.clickButton}
-              onPress={handleClickPhoto}></Pressable>
+              style={style.crosssIconContainer}
+              onPress={() => {
+                setIsCameraOpen(false);
+                setIsBottomSheetOpen(false);
+              }}>
+              <SvgXml xml={crossIconWhite} height={30} width={30} />
+            </Pressable>
+            <View style={style.iconsContainer}>
+              {deviceVal === 'back' ? (
+                <Pressable
+                  style={style.pressbaleIcon}
+                  onPress={() => toggleTorch()}>
+                  {isFlashOn ? (
+                    <SvgXml xml={torchOn} height={30} width={30} />
+                  ) : (
+                    <SvgXml xml={torchOff} height={30} width={30} />
+                  )}
+                </Pressable>
+              ) : (
+                <Pressable style={style.pressbaleIconEmpty}></Pressable>
+              )}
+              <Pressable style={style.clickButton} onPress={handleClickPhoto}>
+                <View style={style.clickButtonInnerComp}></View>
+              </Pressable>
+
+              <Pressable
+                style={style.pressbaleIcon}
+                onPress={() => {
+                  handleCameraChange();
+                }}>
+                <SvgXml xml={cameraFlipIcon} height={30} width={30} />
+              </Pressable>
+            </View>
           </View>
         )
       ) : (
@@ -129,16 +174,18 @@ export default function AddCarScreen4({navigation, route}) {
                 <ImagePickerComp
                   onPress={() => openBottomSheet('front')}
                   image={frontImage}
+                  setImage={setFrontImage}
                 />
                 <CustomText style={style.headingtext}>Back Car</CustomText>
                 <ImagePickerComp
                   onPress={() => openBottomSheet('back')}
                   image={backImage}
+                  setImage={setBackImage}
                 />
                 <Pressable
                   style={style.morePhotosButton}
                   onPress={() => openBottomSheet('more')}>
-                  <SvgXml xml={addIconGrey} height={20} width={20} />
+                  <SvgXml xml={addIconGrey} height={24} width={24} />
                   <CustomText style={style.addMoreText}>
                     Add more photos
                   </CustomText>
@@ -149,14 +196,13 @@ export default function AddCarScreen4({navigation, route}) {
                       key={data}
                       onPress={() => handleClickOnPhoto(data)}
                       style={style.imagePressable}>
-                      <SvgXml
-                        xml={crossIconWhite}
-                        height={25}
-                        width={25}
-                        style={style.icon}
-                        onPress={() => removeImageFromList(data)}
+                      <ImageShow
+                        image={data}
+                        fun={() => removeImageFromList(data)}
+                        styleVal={style.imageContainer}
+                        styleValInner={style.imageInnerContainer}
+                        iconStyle={style.imageIconStyle}
                       />
-                      <Image source={{uri: data}} style={style.image} />
                     </Pressable>
                   ))}
                 </ScrollView>
