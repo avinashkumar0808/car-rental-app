@@ -5,9 +5,12 @@ import HomeHeader from '../HomeHeader';
 import OfferSwipper from '../OfferSwipper';
 import TopCarsSwiper from '../TopCarsSwiper';
 import BottomTab from '../../../../commonComponent/BottomTab';
+import { useNavigation } from '@react-navigation/native';
+import { Screen_Routes } from '../../../../../utils/constants/Routes';
 
 
 export default function HomeComponent() {
+  const navigation = useNavigation();
   return (
  <>
     <ScrollView style={style.container}>
@@ -15,7 +18,7 @@ export default function HomeComponent() {
       <OfferSwipper />
       <View style={style.carDetailsHeading}>
         <Text style={style.carDetailsHeadingText}>Top Vehicle</Text>
-        <Pressable style={style.pressibleButton}>
+        <Pressable style={style.pressibleButton} onPress={()=>navigation.navigate(Screen_Routes.MoreCars)}>
           <Text style={style.pressibleButtonText}>See all</Text>
         </Pressable>
       </View>

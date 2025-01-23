@@ -7,10 +7,10 @@ export default function CheckoutCarDetails({currData}){
   console.log(currData)
   return <View style={style.container}>
 <View>
-  <CustomText style={style.headingText}>{currData.name}</CustomText>
-  <CustomText style={style.price}>£{currData.fare}.00 / day</CustomText>
-  <CustomText style={style.bottomText}>Los Santos, Aug 23 - 26 2021</CustomText>
+  <CustomText style={style.headingText}>{currData?.carName}</CustomText>
+  <CustomText style={style.price}>£{currData?.fare}.00 / day</CustomText>
+  <CustomText style={style.bottomText}>{currData?.address}, Aug 23 - 26 2021</CustomText>
 </View>
-<Image source={{uri:currData.image}} style={style.image}/>
+<Image source={{uri:currData?.frontImageURL}} style={style.image}/>
   </View>
 }

@@ -188,9 +188,9 @@ export default function AddCarScreen4({navigation, route}) {
                   style={style.pressbaleIcon}
                   onPress={() => toggleTorch()}>
                   {isFlashOn ? (
-                    <SvgXml xml={torchOn} height={30} width={30} />
+                    <SvgXml xml={torchOn} height={24} width={24} />
                   ) : (
-                    <SvgXml xml={torchOff} height={30} width={30} />
+                    <SvgXml xml={torchOff} height={24} width={24} />
                   )}
                 </Pressable>
               ) : (
@@ -205,7 +205,7 @@ export default function AddCarScreen4({navigation, route}) {
                 onPress={() => {
                   handleCameraChange();
                 }}>
-                <SvgXml xml={cameraFlipIcon} height={30} width={30} />
+                <SvgXml xml={cameraFlipIcon} height={24} width={24} />
               </Pressable>
             </View>
           </View>

@@ -9,6 +9,16 @@ export const style = StyleSheet.create({
   innerContainer: {
     height: scale(630),
   },
+    headerUI:{
+      position:'absolute',
+      top: scale(0),
+      left:scale(0),
+      zIndex:1000,
+      width:'100%',
+      height:scale(50),
+      paddingHorizontal:scale(15),
+      paddingVertical:scale(15),
+    },
   outterContainer: {
     height: scale(89),
     backgroundColor: colors.white,

@@ -1,22 +1,21 @@
-import { StyleSheet } from "react-native";
+import {StyleSheet} from 'react-native';
 
-import { colors } from "../../../utils/constants/colors";
-import { scale } from "react-native-size-matters";
-import { poppinsRegular } from "../../../utils/constants/fontFamily";
+import {colors} from '../../../utils/constants/colors';
+import {scale} from 'react-native-size-matters';
+import {poppinsRegular} from '../../../utils/constants/fontFamily';
 
 export const styles = StyleSheet.create({
   container: {
-   
     padding: scale(16),
   },
   dropdown: {
     height: scale(40),
     borderColor: colors.lightGray,
     borderWidth: scale(0.5),
-    borderRadius: scale(10),
+    borderRadius: scale(8),
     paddingHorizontal: scale(8),
-    marginVertical:scale(10),
-    paddingLeft:scale(15)
+    marginVertical: scale(10),
+    paddingLeft: scale(15),
   },
 
   label: {
@@ -27,33 +26,31 @@ export const styles = StyleSheet.create({
     zIndex: 999,
     paddingHorizontal: scale(8),
     fontSize: scale(14),
-    color:colors.lightGray,
-    fontFamily:poppinsRegular,
-  
+    color: colors.lightGray,
+    fontFamily: poppinsRegular,
   },
   placeholderStyle: {
     fontSize: scale(12),
-    color:colors.lightGray,
+    color: colors.lightGray,
   },
   selectedTextStyle: {
     fontSize: scale(12),
-    color:colors.lightGray,
+    color: colors.lightGray,
   },
-  
 
   inputSearchStyle: {
     height: scale(40),
     fontSize: scale(14),
   },
   text: {
-      fontWeight: '700',
-      color: colors.darkBlue,
-      fontSize: scale(12),
-    },
-    iconStyle:{
-      color:colors.borderColor,
-      opacity:0.7,
-      height:scale(24),
-      width:scale(24)
-    }
+    fontWeight: '700',
+    color: colors.darkBlue,
+    fontSize: scale(12),
+  },
+  iconStyle: {
+    color: colors.borderColor,
+    opacity: 0.7,
+    height: scale(24),
+    width: scale(24),
+  },
 });

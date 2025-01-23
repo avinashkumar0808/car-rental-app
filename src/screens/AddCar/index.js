@@ -70,6 +70,7 @@ export default function AddCar({navigation, route}) {
           refIndex={2}
           changeFun={setPostCode}
         />
+        
         <View style={style.buttonContainer}>
           <SubmitButton text={'Continue'} onPress={handleContinueClick} />
         </View>

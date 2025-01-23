@@ -97,32 +97,28 @@ export const style = StyleSheet.create({
     paddingHorizontal:scale(15),
   },
   clickButtonInnerComp:{
-  height:scale(50),
-  width:scale(50),
-  borderRadius:scale(25),
-  borderWidth:scale(3),
+  height:scale(56),
+  width:scale(56),
+  borderRadius:scale(28),
+  borderWidth:scale(2),
   borderColor:'black',
  
   },
   imageInnerContainer:{
     height:scale(45),
   }, 
-  imageIconStyle:{
-    position:'absolute',
-    top:0,
-    right:0,
-  },
+
   pressbaleIcon:{
-height:scale(50),
-width:scale(50),
+height:scale(40),
+width:scale(40),
 borderRadius:scale(25),
 backgroundColor:'#282A2C',
  alignItems:'center',
   justifyContent:'center'
   },
   pressbaleIconEmpty:{
-    height:scale(50),
-width:scale(50),
+    height:scale(40),
+width:scale(40),
   },
  
   crosssIconContainer:{
@@ -135,5 +131,10 @@ width:scale(50),
   lottieAnimation:{
     height:scale(80),
     width:scale(80),
-  }
+  },
+  imageIconStyle:{
+    position:'absolute',
+    top:5,
+    right:5,
+  },
 });

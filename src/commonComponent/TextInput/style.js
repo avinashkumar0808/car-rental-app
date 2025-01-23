@@ -14,7 +14,7 @@ export const style = StyleSheet.create({
     marginTop: scale(10),
     paddingRight: 45,
     overflow:'hidden',
-    borderRadius: scale(12),
+    borderRadius: scale(8),
     height:50,
     paddingLeft:15
     
@@ -26,7 +26,7 @@ export const style = StyleSheet.create({
     marginTop: 10,
     paddingRight: 45,
     overflow:'hidden',
-    borderRadius: scale(12),
+    borderRadius: scale(8),
     height:120,
     paddingLeft:15,
   

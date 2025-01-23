@@ -29,6 +29,7 @@ textAlign:'center',
 fontSize:scale(16),
 color:colors.darkBlue,
 fontWeight:700,
+marginHorizontal:scale(15),
   },
   simpleText:{
     fontSize:scale(13),

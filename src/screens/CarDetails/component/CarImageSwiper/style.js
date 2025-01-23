@@ -12,16 +12,7 @@ export const style = StyleSheet.create({
     position:'relative',
 
   },
-  headerUI:{
-    position:'absolute',
-    top: scale(0),
-    left:scale(0),
-    zIndex:1000,
-    width:'100%',
-    height:'30%',
-    paddingHorizontal:scale(15),
-    paddingVertical:scale(15),
-  },
+
     secondContainer: {
       position:'absolute',
       bottom:scale(0),

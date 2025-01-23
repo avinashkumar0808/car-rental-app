@@ -45,7 +45,8 @@ export const style = StyleSheet.create({
 
   },
   keyValueContainer:{
-    width:'90%',
+width:'80%',
+
   }
   
 });

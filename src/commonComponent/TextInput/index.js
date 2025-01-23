@@ -1,4 +1,4 @@
-import {View, TextInput, Text} from 'react-native';
+import {View, TextInput, Text, ScrollView} from 'react-native';
 import {SvgXml} from 'react-native-svg';
 import {forwardRef} from 'react';
 
@@ -28,7 +28,7 @@ const Input = forwardRef(function Input(
   const nextRef = ref.current[refIndex + 1];
 
   return (
-    <View style={style.container}>
+    <ScrollView style={style.container} keyboardShouldPersistTaps={'handled'}>
       <CustomText style={style.text}>{label}</CustomText>
       <View>
         <TextInput
@@ -39,6 +39,7 @@ const Input = forwardRef(function Input(
           onChangeText={newText => changeFun(newText)}
           keyboardType={keyboardType}
           returnKeyType={returnKeyType}
+          blurOnSubmit={false}
           focusable={true}
           ref={currRef}
           onSubmitEditing={() => {
@@ -61,7 +62,7 @@ const Input = forwardRef(function Input(
           />
         )}
       </View>
-    </View>
+    </ScrollView>
   );
 });
 export default Input;

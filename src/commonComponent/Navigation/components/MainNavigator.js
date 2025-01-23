@@ -14,6 +14,7 @@ import AddCarScreen2 from '../../../screens/AddCar/Screen/AddCarScreen2';
 import AddCarScreen3 from '../../../screens/AddCar/Screen/AddCarScreen3';
 import AddCarScreen4 from '../../../screens/AddCar/Screen/AddCarScreen4';
 import FinalAddCar from '../../../screens/FinalAddCar';
+import SeeMore from '../../../screens/SeeMore';
 
 const MainNavigatorStack = createStackNavigator();
 export default function MainNavigator() {
@@ -80,6 +81,10 @@ export default function MainNavigator() {
         }}/>
       <MainNavigatorStack.Screen component={AddCarScreen4} name={Screen_Routes.AddCarScreen4}/>
       <MainNavigatorStack.Screen component={FinalAddCar} name={Screen_Routes.FinalAddCar}  options={{
+          headerShown: true,
+          header: () => <Header />,
+        }}/>
+         <MainNavigatorStack.Screen component={SeeMore} name={Screen_Routes.MoreCars}  options={{
           headerShown: true,
           header: () => <Header />,
         }}/>
