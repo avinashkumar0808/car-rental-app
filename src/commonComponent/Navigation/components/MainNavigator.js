@@ -54,10 +54,6 @@ export default function MainNavigator() {
       <MainNavigatorStack.Screen
         name={Screen_Routes.ProtectionPlans}
         component={ProtectionPlans}
-        options={{
-          headerShown: true,
-          header: () => <Header />,
-        }}
       />
       <MainNavigatorStack.Screen
         name={Screen_Routes.FinalCheckout}
@@ -67,27 +63,50 @@ export default function MainNavigator() {
           header: () => <Header />,
         }}
       />
-      <MainNavigatorStack.Screen component={AddCar} name={Screen_Routes.Add}  options={{
+      <MainNavigatorStack.Screen
+        component={AddCar}
+        name={Screen_Routes.Add}
+        options={{
           headerShown: true,
           header: () => <Header />,
-        }} />
-      <MainNavigatorStack.Screen component={AddCarScreen2} name={Screen_Routes.AddCarScreen2}  options={{
+        }}
+      />
+      <MainNavigatorStack.Screen
+        component={AddCarScreen2}
+        name={Screen_Routes.AddCarScreen2}
+        options={{
           headerShown: true,
           header: () => <Header />,
-        }}/>
-      <MainNavigatorStack.Screen component={AddCarScreen3} name={Screen_Routes.AddCarScreen3}  options={{
+        }}
+      />
+      <MainNavigatorStack.Screen
+        component={AddCarScreen3}
+        name={Screen_Routes.AddCarScreen3}
+        options={{
           headerShown: true,
           header: () => <Header />,
-        }}/>
-      <MainNavigatorStack.Screen component={AddCarScreen4} name={Screen_Routes.AddCarScreen4}/>
-      <MainNavigatorStack.Screen component={FinalAddCar} name={Screen_Routes.FinalAddCar}  options={{
+        }}
+      />
+      <MainNavigatorStack.Screen
+        component={AddCarScreen4}
+        name={Screen_Routes.AddCarScreen4}
+      />
+      <MainNavigatorStack.Screen
+        component={FinalAddCar}
+        name={Screen_Routes.FinalAddCar}
+        options={{
           headerShown: true,
           header: () => <Header />,
-        }}/>
-         <MainNavigatorStack.Screen component={SeeMore} name={Screen_Routes.MoreCars}  options={{
+        }}
+      />
+      <MainNavigatorStack.Screen
+        component={SeeMore}
+        name={Screen_Routes.MoreCars}
+        options={{
           headerShown: true,
           header: () => <Header />,
-        }}/>
+        }}
+      />
     </MainNavigatorStack.Navigator>
   );
 }

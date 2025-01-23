@@ -16,6 +16,9 @@ export const style = StyleSheet.create({
   },
   planContainer:{
 marginBottom:scale(30),
-  }
-
+  },
+  lottieAnimation:{
+    height:scale(80),
+    width:scale(80),
+  },
 })

@@ -4,7 +4,7 @@ import {scale} from 'react-native-size-matters';
 
 import HomeComponent from './components/HomeComponent';
 import {Screen_Routes} from '../../../utils/constants/Routes';
-import Cars from '../Cars';
+import Cars from '../Trip';
 import AddCar from '../AddCar';
 import Chat from '../Chat';
 import Profile from '../Profile';
