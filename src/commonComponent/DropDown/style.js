@@ -2,10 +2,11 @@ import { StyleSheet } from "react-native";
 
 import { colors } from "../../../utils/constants/colors";
 import { scale } from "react-native-size-matters";
+import { poppinsRegular } from "../../../utils/constants/fontFamily";
 
 export const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
+   
     padding: scale(16),
   },
   dropdown: {
@@ -14,7 +15,8 @@ export const styles = StyleSheet.create({
     borderWidth: scale(0.5),
     borderRadius: scale(10),
     paddingHorizontal: scale(8),
-    marginVertical:scale(10)
+    marginVertical:scale(10),
+    paddingLeft:scale(15)
   },
 
   label: {
@@ -26,6 +28,7 @@ export const styles = StyleSheet.create({
     paddingHorizontal: scale(8),
     fontSize: scale(14),
     color:colors.lightGray,
+    fontFamily:poppinsRegular,
   
   },
   placeholderStyle: {

@@ -131,5 +131,9 @@ width:scale(50),
     position:'absolute',
     top:scale(5),
     right:scale(0),
+  },
+  lottieAnimation:{
+    height:scale(80),
+    width:scale(80),
   }
 });

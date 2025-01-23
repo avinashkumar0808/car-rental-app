@@ -12,7 +12,7 @@ export default function ImageShow({image, fun, styleVal, styleValInner,iconStyle
       style={styleVal ? styleVal : style.container}>
       <LinearGradient
         colors={[
-          'rgba(0, 0, 0, 0.02)',
+          'rgba(0, 0, 0, 0.08)',
           'rgba(0, 0, 0, 0.016),rgba(0, 0, 0, 0.012),rgba(0, 0, 0, 0.01),rgba(0, 0, 0, 0.005),rgba(0, 0, 0, 0)',
         ]}
         style={styleValInner ? styleValInner : style.innerContainer}>

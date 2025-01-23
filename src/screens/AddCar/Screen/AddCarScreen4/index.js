@@ -1,11 +1,12 @@
-import {Image, Pressable, ScrollView, View} from 'react-native';
+import {Alert, Image, Pressable, ScrollView, View} from 'react-native';
 import BottomSheet from 'react-native-simple-bottom-sheet';
 import {useState, useRef, useEffect} from 'react';
 import ImagePicker from 'react-native-image-crop-picker';
 import {Camera, useCameraDevice} from 'react-native-vision-camera';
-
-// import { utils } from '@react-native-firebase/app';
-// import storage from '@react-native-firebase/storage';
+import firestore from '@react-native-firebase/firestore';
+import {utils} from '@react-native-firebase/app';
+import storage from '@react-native-firebase/storage';
+import LottieView from 'lottie-react-native';
 
 import {style} from './style';
 import SubmitButton from '../../../../commonComponent/FormSubmitButton';
@@ -23,6 +24,7 @@ import {
 } from '../../../../../utils/constants/icons';
 import Backdrop from '../../../../commonComponent/Backdrop';
 import ImageShow from '../../../../commonComponent/ImageShow';
+import { Screen_Routes } from '../../../../../utils/constants/Routes';
 
 export default function AddCarScreen4({navigation, route}) {
   const [kilometers, setKilometers] = useState('');
@@ -40,6 +42,7 @@ export default function AddCarScreen4({navigation, route}) {
   const [backdropImage, setBackdropImage] = useState(null);
   const [deviceVal, setDeviceVal] = useState('back');
   const [isFlashOn, setIsFlashOn] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const cameraRef = useRef();
   const ref1 = useRef();
@@ -110,6 +113,51 @@ export default function AddCarScreen4({navigation, route}) {
   }
   function toggleTorch() {
     setIsFlashOn(prev => !prev);
+  }
+  function getFileName(val) {
+    const arr = val.split('/');
+    return arr[arr.length - 1];
+  }
+  async function uploadDataOnFirebase() {
+    let frontImageURL, backImageURL, frontFileRef, backFileRef;
+    let moreImagesRef = [];
+    let moreImageURLList = [];
+    if (frontImage && backImage) {
+      setIsLoading(true);
+      const folderRef = storage().ref().child('CarRentalCarImages/');
+      frontFileRef = folderRef.child(getFileName(frontImage));
+      backFileRef = folderRef.child(getFileName(backImage));
+      await frontFileRef.putFile(frontImage);
+      await backFileRef.putFile(backImage);
+      frontImageURL = await frontFileRef.getDownloadURL();
+      backImageURL = await backFileRef.getDownloadURL();
+
+      console.log(frontImageURL);
+      console.log(backImageURL);
+
+      for (let i = 0; i < moreImages.length; i++) {
+        if (moreImages[i]) {
+          moreImagesRef[i] = folderRef.child(getFileName(moreImages[i]));
+          await moreImagesRef[i].putFile(moreImages[i]);
+        }
+      }
+      for (let i = 0; i < moreImagesRef.length; i++) {
+        const url = await moreImagesRef[i].getDownloadURL();
+        moreImageURLList[i] = url;
+      }
+      const carDetails = {
+        ...route.params.car,
+        frontImageURL,
+        backImageURL,
+        moreImageURLList,
+      };
+      await firestore().collection('carRentalCars').add({carDetails});
+      setIsLoading(false);
+      navigation.navigate(Screen_Routes.FinalAddCar)
+    }
+    else{
+      Alert.alert('Image must be uploaded','Atleast upload front car and back car image',[{text:'OK'}])
+    }
   }
   const parent = useRef([ref1, ref2, ref3]);
   return (
@@ -206,7 +254,10 @@ export default function AddCarScreen4({navigation, route}) {
                     </Pressable>
                   ))}
                 </ScrollView>
-                <SubmitButton text={'Continue'} />
+                <SubmitButton
+                  text={'Continue'}
+                  onPress={uploadDataOnFirebase}
+                />
               </View>
             </ScrollView>
             {isBottomSheetOpen && (
@@ -237,6 +288,16 @@ export default function AddCarScreen4({navigation, route}) {
             </Backdrop>
           )}
         </>
+      )}
+      {isLoading && (
+        <Backdrop>
+          <LottieView
+            source={require('../../../../../assets/loading.json')}
+            autoPlay
+            loop
+            style={style.lottieAnimation}
+          />
+        </Backdrop>
       )}
     </>
   );
