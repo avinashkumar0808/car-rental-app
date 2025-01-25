@@ -21,7 +21,7 @@ export default function Checkout({navigation, route}) {
   const [discountCodeText, setDiscountCodeText] =
     useState(`Use a discount code`);
   const [date, setDate] = useState(new Date());
-
+  console.log();
   return (
     <>
       <Header />
@@ -73,7 +73,11 @@ export default function Checkout({navigation, route}) {
             text={'Payment'}
             onPress={() =>
               navigation.navigate(Screen_Routes.ProtectionPlans, {
-                car: {...currData, date, totalFare:total},
+                car: {
+                  ...currData,
+                  date: date.getTime(),
+                  totalFare: total.toString(),
+                },
               })
             }
           />

@@ -35,8 +35,8 @@ export default function Icon({name, style}) {
         stroke={1}
       />
     );
-  } else if (name === 'car') {
-    if (route.name === Screen_Routes.Car) {
+  } else if (name === 'trip') {
+    if (route.name === Screen_Routes.Trip) {
       return (
         <SvgXml xml={activeCar} height={height} width={width} stroke={1} />
       );
@@ -46,7 +46,7 @@ export default function Icon({name, style}) {
         xml={carIcon}
         height={height}
         width={width}
-        onPress={() => navigation.navigate(Screen_Routes.Car)}
+        onPress={() => navigation.navigate(Screen_Routes.Trip)}
         stroke={1}
       />
     );

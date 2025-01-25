@@ -8,6 +8,7 @@ export const style = StyleSheet.create({
     paddingLeft: 20,
     paddingRight: 20,
     padding: 25,
+    backgroundColor:colors.white,
   },
    iconContainer: {
     

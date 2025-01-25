@@ -16,12 +16,13 @@ import Header from '../../commonComponent/Header';
 export default function ProtectionPlans({navigation, route}) {
   const [active, setActive] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
+  console.log(route.params.date)
 
   async function handleButtonClick() {
     setIsLoading(true);
     await firestore()
-      .collection('CarRentalCarBooking')
-      .add({carBooking: {...route.params.car, status: 'ongoing'}});
+      .collection('carRentalCarBookings')
+      .add( {...route.params.car, status: 'ongoing'});
 
     setIsLoading(false);
     navigation.dispatch(StackActions.popTo(Screen_Routes.HomeNavigator));

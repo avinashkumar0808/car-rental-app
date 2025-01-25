@@ -15,7 +15,7 @@ export default function CarDetail({currData}) {
       <CustomText type={'bold'} style={style.largeNameText}>
         {currData?.carName}
       </CustomText>
-   <View style={style.keyValueContainer}>
+   <View>
    <CustomText style={style.aboutText}>
         {currData?.carDescription}
       </CustomText>
@@ -24,10 +24,10 @@ export default function CarDetail({currData}) {
         CAR DETAILS
       </CustomText>
       <View style={style.keyValueContainer}>
-        <ListKeyValue keyValue={'Fuel'} value={currData?.fuelType} />
-        <ListKeyValue keyValue={'Interior Color'} value={currData?.carColor} />
-        <ListKeyValue keyValue={'Kilometers'} value={currData?.kilometers} />
-        <ListKeyValue keyValue={'Seats'} value={currData?.seats} />
+        <ListKeyValue keyValue={'Fuel'} value={currData?.fuelType} sm />
+        <ListKeyValue keyValue={'Interior Color'} value={currData?.carColor} sm />
+        <ListKeyValue keyValue={'Kilometers'} value={currData?.kilometers} sm />
+        <ListKeyValue keyValue={'Seats'} value={currData?.seats} sm />
         <ListKeyValue
           keyValue={'Transmission'}
           value={currData?.transmission}
@@ -35,7 +35,7 @@ export default function CarDetail({currData}) {
       </View>
 
       <CustomText style={style.hostDetailHeading}>HOST DETAIL</CustomText>
-      <View style={style.keyValueContainer}>
+      <View>
         
         <HostDetails
           hostDetails={{

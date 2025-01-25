@@ -16,6 +16,7 @@ import AddCarScreen4 from '../../../screens/AddCar/Screen/AddCarScreen4';
 import FinalAddCar from '../../../screens/FinalAddCar';
 import SeeMore from '../../../screens/SeeMore';
 
+
 const MainNavigatorStack = createStackNavigator();
 export default function MainNavigator() {
   return (
@@ -106,7 +107,9 @@ export default function MainNavigator() {
           headerShown: true,
           header: () => <Header />,
         }}
+       
       />
+       
     </MainNavigatorStack.Navigator>
   );
 }

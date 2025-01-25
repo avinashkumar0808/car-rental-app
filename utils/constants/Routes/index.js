@@ -11,7 +11,7 @@ export const Screen_Routes = {
   Checkout:'Checkout',
   ProtectionPlans:'ProtectionPlans',
   FinalCheckout:'FinalCheckout',
-  Car:'Car',
+  Trip:'Trip',
   Profile:'Profile',
   Add:'Add',
   Chat:'Chat',

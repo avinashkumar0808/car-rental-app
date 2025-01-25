@@ -4,10 +4,9 @@ import {scale} from 'react-native-size-matters';
 
 import HomeComponent from './components/HomeComponent';
 import {Screen_Routes} from '../../../utils/constants/Routes';
-import Cars from '../Trip';
-import AddCar from '../AddCar';
 import Chat from '../Chat';
 import Profile from '../Profile';
+import Trip from '../Trip';
 
 const BottomTabNavigator = createBottomTabNavigator();
 const style = StyleSheet.create({
@@ -32,7 +31,7 @@ export default function Home() {
         component={HomeComponent}
         name={Screen_Routes.Home}
       />
-      <BottomTabNavigator.Screen component={Cars} name={Screen_Routes.Car}/>
+      <BottomTabNavigator.Screen component={Trip} name={Screen_Routes.Trip}/>
       <BottomTabNavigator.Screen component={Chat} name={Screen_Routes.Chat}/>
       <BottomTabNavigator.Screen component={Profile} name={Screen_Routes.Profile}/>
     </BottomTabNavigator.Navigator>

@@ -6,15 +6,16 @@ import { scale } from "react-native-size-matters";
 export const style = StyleSheet.create({
   button:{
     backgroundColor:colors.darkBlue,
-    padding:15,
-    marginTop:20,
-    borderRadius:20,
-    marginVertical:scale(20)
+    padding:scale(15),
+    marginTop:scale(18),
+    borderRadius:scale(8),
+    marginVertical:scale(18)
   },
   text:{
 textAlign:'center',
 color:'#fff',
 fontWeight:"600",
 fontFamily:poppinsRegular,
+fontSize:scale(15),
   }
 })

@@ -29,6 +29,21 @@ export const style = StyleSheet.create({
   bottomText:{
     color:colors.lightGray,
     marginTop:scale(-7)
+  },
+  dateSelector:{
+    flexDirection:'row',
+    alignItems:'center',
+    justifyContent:"space-between",
+    marginRight:scale(15),
+    borderWidth:scale(1),
+    paddingHorizontal:scale(15),
+    paddingVertical:scale(15),
+    marginVertical:scale(15),
+    borderColor:colors.lightGray,
+    borderRadius:scale(8),
+  },
+  dateButtonText:{
+    color:colors.lightGray
   }
 
 })

@@ -7,7 +7,7 @@ export default function BottomTab() {
     <View style={style.container}>
       <View style={style.innerContainer}>
         <Icon name={'home'} />
-        <Icon name={'car'} />
+        <Icon name={'trip'} />
       </View>
       <Icon name={'add'} style={style.iconStyle} />
       <View style={style.innerContainer}>

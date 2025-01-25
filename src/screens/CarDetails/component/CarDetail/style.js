@@ -4,11 +4,10 @@ import {colors} from '../../../../../utils/constants/colors';
 
 export const style = StyleSheet.create({
   container: {
-
-    width: scale(Dimensions.get('screen').width),
     backgroundColor: colors.white,
-    paddingHorizontal: scale(15),
     paddingVertical: scale(15),
+    paddingHorizontal:scale(15),
+
   },
   largeNameText: {
     fontSize: scale(19),
@@ -45,7 +44,7 @@ export const style = StyleSheet.create({
 
   },
   keyValueContainer:{
-width:'80%',
+
 
   }
   
