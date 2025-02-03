@@ -7,6 +7,8 @@ import {style} from './style';
 import SubmitButton from '../../../../commonComponent/FormSubmitButton';
 import {Screen_Routes} from '../../../../../utils/constants/Routes';
 import BookedCarFooter from './component/BookedCarFooter';
+import { useContext } from 'react';
+import { CarContext } from '../../../../store/carContext/CarsContext';
 
 export default function BookedCar({
   car,
@@ -19,11 +21,14 @@ export default function BookedCar({
   setDeleteData,
 }) {
   const navigation = useNavigation();
+  const {reviews} = useContext(CarContext);
+  const rev = reviews?.filter(data=>data?.id === car.currCarId);
+  console.log(rev);
   function handleBookAgain() {
-    navigation.navigate(Screen_Routes.CarDetails, {data: car});
+    navigation.navigate(Screen_Routes.CarDetails, {data:{data:car, parentId:car.currCarId,rev}});
   }
   function handleReview() {
-    navigation.navigate(Screen_Routes.Review, {data:{car, id}});
+    navigation.navigate(Screen_Routes.Review, {data:{car, id, rev}});
   }
 
   const date = new Date(car?.date);

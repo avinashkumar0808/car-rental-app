@@ -1,17 +1,19 @@
-import {Pressable, ScrollView, View} from 'react-native';
+import { Pressable, ScrollView, View } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import {SvgXml} from 'react-native-svg';
+import { SvgXml } from 'react-native-svg';
 
-import {style} from './style';
+import { style } from './style';
 import CarImageSwiper from './component/CarImageSwiper';
 import CarDetail from './component/CarDetail';
 import CustomText from '../../commonComponent/CutstomText';
-import {Screen_Routes} from '../../../utils/constants/Routes';
-import {leftIconWhite} from '../../../utils/constants/icons';
+import { Screen_Routes } from '../../../utils/constants/Routes';
+import { leftIconWhite } from '../../../utils/constants/icons';
 
-export default function CarDetails({route, navigation}) {
-  const currData = {...route.params.data.data, rev: route.params.data.rev};
+export default function CarDetails({ route, navigation }) {
+  const currData = { ...route.params.data.data, rev: route.params.data.rev };
+  console.log(currData);
   const currCarId = route.params.data.parentId;
+  console.log(currCarId);
   return (
     <>
       <LinearGradient
@@ -46,7 +48,7 @@ export default function CarDetails({route, navigation}) {
             style={style.outterContainerPressable}
             onPress={() =>
               navigation.navigate(Screen_Routes.Checkout, {
-                currData: {currData, currCarId},
+                currData: { currData, currCarId },
               })
             }>
             <CustomText style={style.outterContainerPressableText}>
@@ -56,5 +58,6 @@ export default function CarDetails({route, navigation}) {
         </View>
       </View>
     </>
+
   );
 }

@@ -7,15 +7,15 @@ import {style} from './style';
 import { CarContext } from '../../store/carContext/CarsContext';
 
 export default function SeeMore() {
-  const {cars} = useContext(CarContext);
-  console.log(cars);
+  const {cars, carId, reviews} = useContext(CarContext);
+  console.log(carId);
 
   return (
     <ScrollView style={style.container}>
     <View style={style.innerContainer}>
       {
           cars.map((data,index) => (
-            <TopCar data={data?.carDetails} full key={index} />
+              <TopCar data={data?.carDetails} full key={index} parentId={carId[index]} review={reviews} />
           ))
       }
     </View>

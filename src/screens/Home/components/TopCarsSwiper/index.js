@@ -16,7 +16,7 @@ export default function TopCarsSwiper() {
   const [carId, setCarId] = useState([]);
   const [review, setReview] = useState([]);
 
-  const {updateCars, updateCarId} = useContext(CarContext);
+  const {updateCars, updateCarId, updateReviews} = useContext(CarContext);
   useEffect(() => {
     (async () => {
       setCars([]);
@@ -29,7 +29,7 @@ export default function TopCarsSwiper() {
         });
         setCarId(id);
         setCars(arr);
-
+        updateCarId(id)
         updateCars(arr);
       });
       reviewData.get().then(querySnapshot => {
@@ -38,6 +38,7 @@ export default function TopCarsSwiper() {
           rev.push(documentSnapshot?.data());
         });
         setReview(rev);
+        updateReviews(rev);
       });
     })();
     navigation.addListener('focus',()=>{
@@ -69,7 +70,6 @@ export default function TopCarsSwiper() {
 
   return cars ? (
     <ScrollView horizontal={true} style={style.container}>
-      {console.log(cars)}
       {cars.map((data, index) => {
         return (
           <TopCar data={data?.carDetails} key={index} parentId={carId[index]} review={review} />
