@@ -25,7 +25,7 @@ export const styles = StyleSheet.create({
     top: scale(8),
     zIndex: 999,
     paddingHorizontal: scale(8),
-    fontSize: scale(14),
+    fontSize: scale(16),
     color: colors.lightGray,
     fontFamily: poppinsRegular,
   },
@@ -45,7 +45,7 @@ export const styles = StyleSheet.create({
   text: {
     fontWeight: '700',
     color: colors.darkBlue,
-    fontSize: scale(12),
+    fontSize: scale(14),
   },
   iconStyle: {
     color: colors.borderColor,

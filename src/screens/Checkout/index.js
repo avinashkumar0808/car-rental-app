@@ -15,7 +15,8 @@ import {Screen_Routes} from '../../../utils/constants/Routes';
 
 export default function Checkout({navigation, route}) {
   const [isBackdropOpen, setIsBackDropOpen] = useState(false);
-  const currData = route.params.currData;
+  const currData = route.params.currData.currData;
+  const currCarId = route.params.currData.currCarId;
   const {user, address} = useContext(UserContext);
   const [total, setTotal] = useState(+currData.fare + 5);
   const [discountCodeText, setDiscountCodeText] =
@@ -77,6 +78,7 @@ export default function Checkout({navigation, route}) {
                   ...currData,
                   date: date.getTime(),
                   totalFare: total.toString(),
+                  currCarId
                 },
               })
             }

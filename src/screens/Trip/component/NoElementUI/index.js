@@ -18,10 +18,10 @@ export default function NoElementUI() {
           style={style.image}
         />
         <CustomText style={style.smallHeading}>
-          Your don't have trip yet
+          There is no data!
         </CustomText>
         <CustomText style={style.simpleText}>
-          Seems like you never never rent in Pikbil. Try Rent some car in your
+           Try Rent some car in your
           account
         </CustomText>
         <CustomText style={style.simpleText}>

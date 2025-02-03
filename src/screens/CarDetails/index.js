@@ -10,7 +10,8 @@ import {Screen_Routes} from '../../../utils/constants/Routes';
 import {leftIconWhite} from '../../../utils/constants/icons';
 
 export default function CarDetails({route, navigation}) {
-  const currData = route.params.data;
+  const currData = {...route.params.data.data, rev: route.params.data.rev};
+  const currCarId = route.params.data.parentId;
   return (
     <>
       <LinearGradient
@@ -44,7 +45,9 @@ export default function CarDetails({route, navigation}) {
           <Pressable
             style={style.outterContainerPressable}
             onPress={() =>
-              navigation.navigate(Screen_Routes.Checkout, {currData})
+              navigation.navigate(Screen_Routes.Checkout, {
+                currData: {currData, currCarId},
+              })
             }>
             <CustomText style={style.outterContainerPressableText}>
               Rent Car

@@ -22,7 +22,7 @@ export default function ProtectionPlans({navigation, route}) {
     setIsLoading(true);
     await firestore()
       .collection('carRentalCarBookings')
-      .add( {...route.params.car, status: 'ongoing'});
+      .add( {...route.params.car, status: 'Ongoing'});
 
     setIsLoading(false);
     navigation.dispatch(StackActions.popTo(Screen_Routes.HomeNavigator));

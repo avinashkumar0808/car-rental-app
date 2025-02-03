@@ -20,4 +20,5 @@ export const Screen_Routes = {
   AddCarScreen4:'AddCarScreen4',
   FinalAddCar:'FinalAddCar',
   MoreCars:'MoreCars',
+  Review:'Review',
 };

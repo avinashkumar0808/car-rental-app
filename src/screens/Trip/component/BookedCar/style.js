@@ -5,7 +5,8 @@ import {colors} from '../../../../../utils/constants/colors';
 export const style = StyleSheet.create({
   container: {
     width: '100%',
-    marginBottom: scale(15),
+
+
   },
 
   carImageContainer: {

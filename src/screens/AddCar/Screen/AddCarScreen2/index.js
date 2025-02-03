@@ -7,8 +7,9 @@ import SubmitButton from '../../../../commonComponent/FormSubmitButton';
 import Header from '../../../../commonComponent/Header';
 import AddCarHeader from '../../components/AddCarHeader';
 import DropdownComponent from '../../../../commonComponent/DropDown';
-import { Screen_Routes } from '../../../../../utils/constants/Routes';
-import { carBrands } from '../../../../../utils/constants/CarBrands';
+import {Screen_Routes} from '../../../../../utils/constants/Routes';
+import {carBrands} from '../../../../../utils/constants/CarBrands';
+import { category as carCategory } from '../../../../../utils/constants/Category';
 
 export default function AddCarScreen2({navigation, route}) {
   const [carName, setCarName] = useState('');
@@ -16,6 +17,7 @@ export default function AddCarScreen2({navigation, route}) {
   const [carColor, setCarColor] = useState('');
   const [carBrand, setCarBrand] = useState(null);
   const [isFocus, setIsFocus] = useState(false);
+  const [category, setCategory] = useState('');
 
   const ref1 = useRef();
   const ref2 = useRef();
@@ -23,21 +25,35 @@ export default function AddCarScreen2({navigation, route}) {
   console.log(route.params);
 
   const parent = useRef([ref1, ref2, ref3]);
-function handleContinueClick(){
- if(carName.trim()!=='' && carDescription.trim()!=='' && carColor.trim()!=='' && carBrand!==null){
-  navigation.navigate(Screen_Routes.AddCarScreen3,{car:{...route.params.car,carName,carDescription,carColor,carBrand}})
- }
- else{
-  Alert.alert('Input Field is empty','Some of the inputfields are empty.',[{
-    text:'OK'
-  }])
- }
-}
+  function handleContinueClick() {
+    if (
+      carName.trim() !== '' &&
+      carDescription.trim() !== '' &&
+      carColor.trim() !== '' &&
+      carBrand !== null
+    ) {
+      navigation.navigate(Screen_Routes.AddCarScreen3, {
+        car: {...route.params.car, carName, carDescription, carColor, carBrand},
+      });
+    } else {
+      Alert.alert(
+        'Input Field is empty',
+        'Some of the inputfields are empty.',
+        [
+          {
+            text: 'OK',
+          },
+        ],
+      );
+    }
+  }
 
   return (
     <>
-      <ScrollView style={style.container} keyboardShouldPersistTaps='handle' keyboardDismissMode='none'>
-
+      <ScrollView
+        style={style.container}
+        keyboardShouldPersistTaps="handle"
+        keyboardDismissMode="none">
         <AddCarHeader step={2} />
         <View style={style.inputContainer}>
           <Input
@@ -74,6 +90,14 @@ function handleContinueClick(){
             ref={parent}
             refIndex={2}
             changeFun={setCarColor}
+          />
+           <DropdownComponent
+            isFocus={isFocus}
+            setIsFocus={setIsFocus}
+            value={category}
+            setValue={setCategory}
+            label={'Category'}
+            data={carCategory}
           />
           <View style={style.buttonContainer}>
             <SubmitButton text={'Continue'} onPress={handleContinueClick} />

@@ -15,6 +15,7 @@ import AddCarScreen3 from '../../../screens/AddCar/Screen/AddCarScreen3';
 import AddCarScreen4 from '../../../screens/AddCar/Screen/AddCarScreen4';
 import FinalAddCar from '../../../screens/FinalAddCar';
 import SeeMore from '../../../screens/SeeMore';
+import ReviewScreen from '../../../screens/ReviewScreen';
 
 
 const MainNavigatorStack = createStackNavigator();
@@ -109,6 +110,10 @@ export default function MainNavigator() {
         }}
        
       />
+           <MainNavigatorStack.Screen
+        component={ReviewScreen}
+        name={Screen_Routes.Review}
+       />
        
     </MainNavigatorStack.Navigator>
   );

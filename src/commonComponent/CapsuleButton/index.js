@@ -5,6 +5,7 @@ import {useCallback} from 'react';
 
 export default function CapsuleButton({text, active, onPress, setActive}) {
   const handlePress = useCallback(() => {
+    
     setActive(text);
     onPress(text);
   }, [setActive, onPress, text]);
